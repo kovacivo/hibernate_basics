@@ -8,22 +8,19 @@
 
         <!-- Database connection settings -->
         <property name="connection.driver_class">org.postgresql.Driver</property>
-        <property name="connection.url">jdbc:postgresql://localhost:5432/bookstore</property>
+        <property name="connection.url">jdbc:postgresql://localhost:5432/hello_world</property>
         <property name="connection.username">postgres</property>
         <property name="connection.password">postgres</property>
 
         <!-- SQL dialect -->
-        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
         
         <!-- Pretty print the SQL in the log file and console -->
-        <!-- <property name="format_sql">true</property> -->
+        <property name="format_sql">true</property>
 		
 		<!-- Create/update tables automatically using mapping metadata -->		 
 		<!-- <property name="hbm2ddl.auto">update</property> -->
 		
-		<mapping class="entity.Book"/>
-		<mapping class="entity.Chapter"/>
-		<mapping class="entity.Publisher"/>
-		
+		<mapping class="entity.Message"/>
     </session-factory>
 </hibernate-configuration>

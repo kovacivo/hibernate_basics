@@ -5,8 +5,12 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>hibernate_basics</groupId>
-    <artifactId>bookstore_hibernate_with_annotations</artifactId>
+    <artifactId>hello_world_hibernate_with_annotations</artifactId>
     <version>1</version>
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
 
     <dependencies>
         <dependency>
