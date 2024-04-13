@@ -4,3 +4,5 @@ bookstore_jdbc/out/*
 hello-world_hibernate-and-jpa-annotations/target
 hello-world_hibernate-and-jpa-annotations/.idea
 hello-world_hibernate-and-jpa-annotations/*.iml
+component-mapping-example/.idea
+component-mapping-example/*.iml
