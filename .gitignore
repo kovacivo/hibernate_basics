@@ -6,3 +6,7 @@ hello-world_hibernate-and-jpa-annotations/.idea
 hello-world_hibernate-and-jpa-annotations/*.iml
 component-mapping-example/.idea
 component-mapping-example/*.iml
+component-mapping-example/target
+mapping-associations/.idea
+mapping-associations/*.iml
+mapping-associations/target
