@@ -14,7 +14,10 @@
 
         <!-- SQL dialect -->
         <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
-        
+
+        <!-- Show the SQL in the log file and console -->
+        <property name="show_sql">true</property>
+
         <!-- Pretty print the SQL in the log file and console -->
         <property name="format_sql">true</property>
 		
