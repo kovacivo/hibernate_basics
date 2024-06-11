@@ -2,6 +2,7 @@ package client;
 
 
 import entity.Address;
+import entity.Book;
 import entity.Person;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -22,8 +23,14 @@ public class Client {
 			//Person having 1 Address
 			Address address = new Address("200 E Main St", "Seattle", "85123");
 			Person person = new Person("Ruby", address);
+			Book book = new Book("123456", "Maly princ");
 
 			session.persist(person);
+			session.persist(book);
+
+			Book malyPrinc = session.get(Book.class, "123456");
+			System.out.println(malyPrinc.getIsbn() + " " + malyPrinc.getTitle());
+			System.out.printf("%s, %s\n", malyPrinc.getIsbn(), malyPrinc.getTitle());
 			//---------------------------------------------------------------------------------------
 
 			//Person having 2 Address (homeAddress and billingAddress) using AttributeOverrides

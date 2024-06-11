@@ -11,7 +11,23 @@ public class Message {
 	@Id
 	@Column(name = "ID", unique = true, nullable = false, length = 50)
 	private Integer id;
-	
+
+	public String getText() {
+		return text;
+	}
+
+	public void setText(String text) {
+		this.text = text;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
 	@Column(name = "TEXT", nullable = false, length = 255)
 	private String text;
 		

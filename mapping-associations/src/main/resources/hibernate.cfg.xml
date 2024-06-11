@@ -29,6 +29,7 @@
 
         <!-- Use Annotation-based mapping metadata -->
         <mapping class="entity.Person"/>
+        <mapping class="entity.Book"/>
 
     </session-factory>
 </hibernate-configuration>

@@ -17,6 +17,7 @@
         
         <!-- Pretty print the SQL in the log file and console -->
         <property name="format_sql">true</property>
+        <property name="hibernate.show_sql">true</property>
 		
 		<!-- Create/update tables automatically using mapping metadata -->		 
 		<!-- <property name="hbm2ddl.auto">update</property> -->

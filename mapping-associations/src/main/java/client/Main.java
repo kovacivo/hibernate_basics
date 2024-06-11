@@ -17,6 +17,8 @@ public class Main {
         // persist an entity
         inSession(factory, entityManager -> {
             entityManager.persist(new Book("9781932394153", "Hibernate in Action"));
+            Book hibernateInAction = entityManager.find(Book.class, 9781932394153L);
+            out.println("$$$$ " + hibernateInAction.getIsbn() + ", " + hibernateInAction.getTitle() + " $$$$");
         });
         // query data using HQL
         inSession(factory, entityManager -> {
